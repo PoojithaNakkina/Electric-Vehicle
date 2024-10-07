@@ -1,0 +1,28 @@
+.graphs-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+/* Style for each box */
+.graphs{
+    width: 600px;
+    height: 400px;
+    /* Box background color */
+    border-radius: 5px;       /* Rounded corners */
+    padding: 20px;
+    margin: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Adding shadow */
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover effect for box */
+.graphs:hover {
+    transform: scale(1.1); /* Enlarge the box on hover */
+}

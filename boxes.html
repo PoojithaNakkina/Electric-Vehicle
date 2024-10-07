@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boxes Example</title>
+    <style>
+        /* General container style */
+        .box-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        /* Style for each box */
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: #3498db; /* Box background color */
+            border-radius: 10px;       /* Rounded corners */
+            padding: 20px;
+            margin: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adding shadow */
+            color: white;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: transform 0.3s ease; /* Smooth transition */
+        }
+
+        /* Hover effect for box */
+        .box:hover {
+            transform: scale(1.1); /* Enlarge the box on hover */
+        }
+
+        /* Box content style */
+        .box h3 {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box-container">
+        <div class="box">
+            <h3>Box 1</h3>
+        </div>
+        <div class="box">
+            <h3>Box 2</h3>
+        </div>
+        <div class="box">
+            <h3>Box 3</h3>
+        </div>
+        <div class="box">
+            <h3>Box 4</h3>
+        </div>
+    </div>
+
+</body>
+</html>

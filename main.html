@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="graphs.css">
+    <title>Document</title>
+    <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/xy.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+    <style>
+        #chartdiv {
+            width: 300px;
+            height: 250px;
+        }
+        #chartdiv1 {
+            width: 300px;
+            height: 250px;
+        }
+        #chartdiv2 {
+            width: 300px;
+            height: 250px;
+        }
+        #chartdiv3 {
+            width: 300px;
+            height: 250px;
+        }
+    </style>
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">EV Monitoring</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/">Home</a>
+                    </li>
+                   
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about">About Us</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact">Contact Us</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-secondary" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+<h2>Battery parameters </h2>
+    <div class="box-container">
+        <div>
+            <h2>Voltage</h2>
+        <div class="box">
+            <h3>0.00</h3>
+        </div>
+    </div>
+    <div>
+        <h2>Temperature</h2>
+        <div class="box">
+            <h3>0.00</h3>
+        </div>
+    </div>
+    <div>
+        <h2>Current</h2>
+        <div class="box">
+            <h3>0.00</h3>
+        </div>
+    </div>
+    <div>
+        <h2>Battery</h2>
+        <div class="box">
+            <h3>0.00</h3>
+        </div>
+    </div>
+</div>
+
+<div class="graphs-container">
+    <div id="chartdiv" class="graphs"></div>
+    <div id="chartdiv1" class="graphs"></div>
+    <div id="chartdiv2" class="graphs"></div>
+    <div id="chartdiv3" class="graphs"></div>
+</div>
+
+
+
+
+
+<script src="script.js"></script>
+<script src="script2.js"></script>
+<script src="script3.js"></script>
+<script src="script4.js"></script>
+
+
+
+
+</body>
+</html>
